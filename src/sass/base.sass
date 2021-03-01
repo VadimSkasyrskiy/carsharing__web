@@ -1,0 +1,140 @@
+* 
+    box-sizing: border-box
+
+body
+    font-family: $font_main
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+    font-weight: normal
+p
+    margin: 0
+
+img 
+    max-width: 100%
+    height: auto
+
+a
+    color: $color_dark
+
+    &:hover
+        text-decoration: none
+
+section, .footer
+    padding: 100px 0
+
+button
+    background: none
+    border: none
+    cursor: pointer
+
+    &:focus
+        outline: none
+
+ul
+    list-style: none
+    padding: 0
+    margin: 0
+  
+.container
+    max-width: 1230px
+    padding: 0 15px
+    margin: 0 auto
+
+.menu
+    &__list 
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+        &-link
+            font-size: 18px
+            text-transform: uppercase
+            color: $color_white
+            line-height: 21.09px
+            text-decoration: none
+            border-bottom: 1px solid transparent
+            padding-bottom: 1px
+
+
+            &:hover, &--active
+                border-bottom: 1px solid $color_white     
+
+    &__item
+        margin: 12px     
+
+.phone-number 
+    @extend .menu__list-link
+
+.btn 
+    background: $color_green
+    color: $color_white
+    font-size: 16px
+    text-transform: uppercase
+    width: 200px
+    height: 50px
+    border: 1px solid transparent
+    transition: all .15s
+
+    &:hover
+        color: $color_green
+        background: transparent
+        border: 1px solid $color_green
+    
+    &__text
+        position: relative
+        &::before
+            content: ""
+            display: block
+            width: 25px
+            height: 25px
+            background: #000
+            position: absolute
+            left: -35px
+            top: 50%
+            transform: translateY(-50%)
+            background: url('../img/btn_icon.svg') no-repeat
+            
+    &--icon
+        padding-left: 27px
+
+
+.offer__slider .slick-dots 
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+
+.slick-dots 
+    list-style: none
+    text-align: center
+
+    button
+        font-size: 0
+        width: 8px
+        height: 8px
+        background: $color_dark
+        border: none
+        border-radius: 50%
+        padding: 0
+
+.slick-active button
+    width: 16px
+    height: 16px
+
+.slick-slide:focus
+    outline: none
+
+.section-title
+    font-family: $font_bold
+    margin-bottom: 32px
+
+    &--white
+        color: $color_white
+
+.social
+    &__list
+        display: flex
+    
+    &__item:not(:last-child)
+        margin-right: 25px

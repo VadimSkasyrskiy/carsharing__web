@@ -1,0 +1,42 @@
+.reviews
+    background: $color_brown
+
+    &__slider
+        padding-bottom: 50px
+        margin: 0 -15px
+
+        .slick-dots
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+
+            li
+                margin-right: 12px
+            button
+                background: $color_green
+            
+    .slick-initialized .slick-slide, .slick-slide img
+        display: flex
+        justify-content: center
+
+    &__item
+        &-title  
+            font-size: 24px
+            margin-top: 50px
+        
+        &-descr
+            margin: auto
+            padding: 0 30px
+        
+        .reviews__item-content
+            max-width: 270px
+            height: 300px
+            color: $color_white
+            text-align: center
+            display: flex
+            flex-direction: column
+            margin: 0 15px
+            border: 1px solid $color_green
+

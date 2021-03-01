@@ -1,0 +1,92 @@
+.offer
+    min-height: 800px
+    position: relative
+    padding-top: 0
+
+    &__header 
+        background: $color_brown
+        &-inner 
+            height: 100px
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+    &__content
+        height: 100%
+        max-width: 1230px
+        padding: 0 15px
+        margin: 0 auto
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        box-sizing: content-box
+
+        &-row
+            display: flex
+            width: 100%
+            
+            &:first-child
+                margin-top: 60px
+                margin-bottom: 30px
+
+        &-item
+            width: 50%
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            text-align: center
+
+            &--items
+                justify-content: space-between
+                padding: 0 25px
+            
+        &-text
+            max-width: 465px
+
+        &--links
+            align-items: flex-end
+        
+        &-link
+            border-bottom: 1px solid $color_dark
+            padding-bottom: 1px
+            text-decoration: none
+
+            &:not(:last-child)
+                margin-right: 20px
+
+        &-title
+            font-size: 48px
+            line-height: 57.6px
+            font-family: $font_bold
+            margin-bottom: 20px
+        
+        &-descr
+            font-size: 24px
+            line-height: 28.13px
+            margin-bottom: 65px
+        
+    &__item
+        width: 150px
+        height: 150px
+        padding: 20px
+        border: 1px solid $color_dark
+        background: #fff
+        cursor: pointer
+        transition: transform .25s
+
+        &-icon
+            margin-bottom: 10px
+
+        &:hover
+            transform: scale(1.25)
+    &__slider
+        width: 100%
+
+        &-text
+            font-family: $font_bold
+
+            span
+                margin-right: 5px
+

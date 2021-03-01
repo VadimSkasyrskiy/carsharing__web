@@ -1,0 +1,46 @@
+.advantages
+    &__row
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__proposal
+        width: 290px
+
+    &__text
+        max-width: 267px
+        text-align: right
+
+    &__descr
+        margin-bottom: 30px
+        color: $color_dark
+
+    &__list
+        &-item
+            margin-bottom: 30px
+            text-align: right
+
+            &:nth-child(4)
+                text-align: left
+
+            &:nth-child(2), &:nth-child(6)
+                margin-right: 60px
+            
+            &:nth-child(3), &:nth-child(5)
+                margin-right: 110px
+
+        &-text
+            padding-right: 22px
+            position: relative
+
+            &::after
+                content: ''
+                display: block
+                width: 15px
+                height: 15px
+                background: #000
+                border-radius: 50%
+                position: absolute
+                right: 0
+                top: 50%
+                transform: translateY(-50%)
